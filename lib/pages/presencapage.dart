@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const CartaoPage(),
+      home: const PresencaPage(),
       routes: {
         '/home': (context) => const Homepage(),
       },
@@ -19,15 +19,15 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class CartaoPage extends StatefulWidget {
-  const CartaoPage({super.key});
+class PresencaPage extends StatefulWidget {
+  const PresencaPage({super.key});
 
   @override
-  State<CartaoPage> createState() => _CartaoPageState();
+  State<PresencaPage> createState() => _PresencaPageState();
 }
 
-class _CartaoPageState extends State<CartaoPage> {
-  int _secondsLeft = 10;
+class _PresencaPageState extends State<PresencaPage> {
+  int _secondsLeft = 5;
 
   @override
   void initState() {

@@ -1,5 +1,5 @@
 import 'package:eurolearning/models/treinamento_model.dart';
-import 'package:eurolearning/pages/cartaoPage.dart';
+import 'package:eurolearning/pages/presencapage.dart';
 import 'package:eurolearning/services/local_auth_api.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -172,7 +172,7 @@ class DetalhesTreinamentoPage extends StatelessWidget {
                       if (isAutenticated) {
                         Navigator.of(context).pushReplacement(
                           MaterialPageRoute(
-                            builder: (context) => const CartaoPage(),
+                            builder: (context) => const PresencaPage(),
                           ),
                         );
                       }
