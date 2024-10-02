@@ -6,7 +6,7 @@ class NetworkService {
     var connectivityResult = await (Connectivity().checkConnectivity());
     if (connectivityResult == ConnectivityResult.wifi) {
       var wifiName = await (NetworkInfo().getWifiIP());
-      return wifiName == '192.168.0.200';
+      return wifiName == '';
     }
     return false;
   }

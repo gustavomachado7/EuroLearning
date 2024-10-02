@@ -47,7 +47,7 @@ class _PresencaPageState extends State<PresencaPage> {
       _startCountdown();
     } else {
       if (mounted) {
-        Navigator.pushNamed(context, '/home');
+        Navigator.of(context).pop();
       }
     }
   }
